@@ -121,9 +121,20 @@ a:focus .button-icon {
   color: var(--background-color);
   text-align: center;
   padding: 0 15px 0;
-  background-image: url(../image/index/hero-bg.png);
-  background-repeat: no-repeat;
 }
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/index/hero-dg.jpg);
+}
+
 .hero-container {
   display: inline-block;
   padding: 200px 0 200px;
@@ -316,6 +327,8 @@ li {
 }
 .client-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .client .button-lite {
   display: block;
