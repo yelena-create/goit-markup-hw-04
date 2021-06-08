@@ -93,7 +93,8 @@ header {
   margin-right: 10px;
   fill: var(--main-text-color);
 }
-.button-icon:hover {
+a:hover .button-icon,
+a:focus .button-icon {
   fill: var(--accent-color);
 }
 .phone {
@@ -144,7 +145,7 @@ header {
   margin-right: -8px;
 }
 
-.buttuns-box {
+.buttons-box {
   margin-right: 8px;
 }
 
@@ -242,8 +243,9 @@ header {
 .team {
   justify-content: space-between;
   padding: 94px 0;
+  background-color: #f5f4fa;
 }
-.team.container {
+.team .container {
   padding: 0 15px;
 }
 .team-card {
@@ -256,28 +258,36 @@ header {
   margin: auto;
   padding: 30px 0;
 }
+.team-social {
+  margin-top: 16px;
+}
 .team-social-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 6px;
   fill: #afb1b8;
   background-color: var(--background-color);
   border-radius: 50%;
 }
-.team-social-item .button-lite {
+
+.team-social-item .button-social,
+.footer-social-item .button-social {
   text-align: center;
   padding: 12px;
+  margin: 0 12px 0 0;
 }
-.team-social-item .button-icon {
+.team-social-item .button-icons,
+.team-social-item .button-icons {
   margin: 0;
+  fill: #afb1b8;
 }
-.button-lite:hover {
+.button-social:hover,
+.button-social:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
-
-.button-lite:hover .button-icon {
+.button-social:hover .button-icons,
+.button-social:focus .button-icons {
   fill: var(--background-color);
 }
 
@@ -296,7 +306,36 @@ header {
 li {
   margin: 0;
 }
-
+/* -------------     clients */
+.client .container {
+  padding: 84px 0 104px;
+}
+.client-list {
+  display: flex;
+}
+.client .button-lite {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.client .button-icons {
+  fill: #afb1b8;
+}
+.client .button-lite:hover,
+.client .button-lite:focus {
+  border: 1px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+.button-lite:hover .button-icons,
+.button-lite:focus .button-icons {
+  fill: var(--accent-color);
+}
+/* ------------------footer */
 .footer {
   color: var(--background-color);
   padding: 60px 0;
@@ -305,6 +344,10 @@ li {
 .footer .container {
   margin: 0 auto;
   padding: 0 15px;
+  display: flex;
+}
+.footer-contacts {
+  margin-right: 70px;
 }
 .footer a {
   color: var(--background-color);
@@ -335,6 +378,32 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer-social .title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-social-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-social-item .button-social {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-item .button-social:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-item .button-icons {
+  fill: #ffffff;
+}
+.footer-social-item a:hover,
+.footer-social-item a:focus {
+  background-color: var(--accent-color);
 }
 
 /*------------page Potfolio----*/
