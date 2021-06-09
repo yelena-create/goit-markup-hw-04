@@ -158,7 +158,9 @@ a:focus .button-icon {
   margin-bottom: 50px;
   margin-right: -8px;
 }
-
+button {
+  border: none;
+}
 .buttons-box {
   margin-right: 8px;
 }
@@ -245,13 +247,11 @@ a:focus .button-icon {
 }
 .image-list {
   display: flex;
-
-  /* justify-content: space-between; */
 }
 .image-list :not(:last-child) {
   margin-right: 30px;
 }
-/* ---contacts section--- */
+/* ----------------team section--- */
 .team {
   justify-content: space-between;
   padding: 94px 0;
@@ -280,7 +280,6 @@ a:focus .button-icon {
   justify-content: center;
   fill: #afb1b8;
   background-color: var(--background-color);
-  border-radius: 50%;
 }
 
 .team-social-item .button-social,
@@ -290,6 +289,7 @@ a:focus .button-icon {
   margin: 0 12px 0 0;
   background-color: var(--background-color);
   border-radius: 50%;
+  /* border: none; */
 }
 .team-social-item .button-icons,
 .team-social-item .button-icons {
@@ -318,17 +318,18 @@ a:focus .button-icon {
   display: flex;
   align-items: center;
 }
-li {
-  margin: 0;
+li,
+a {
+  display: block;
 }
 /* -------------     clients */
-.client .container {
-  padding: 84px 0 104px;
+.client {
+  padding: 94px 0;
 }
 .client-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .client .button-lite {
   display: block;
@@ -474,14 +475,12 @@ li {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.card-list:hover {
+.cadt-item:hover,
+.cadt-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 a {
   display: block;
-}
-a:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-heading {
