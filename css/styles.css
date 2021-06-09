@@ -271,6 +271,10 @@ button {
   padding: 30px 0;
   background-color: var(--background-color);
 }
+.button-social {
+  width: 44px;
+  height: 44px;
+}
 .team-social {
   margin-top: 16px;
 }
